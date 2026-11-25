@@ -1,14 +1,17 @@
 ---
 layout: archive
-title: "Portfolio"
-permalink: /portfolio/
+title: "Research"
+permalink: /research/
 author_profile: true
+redirect_from:
+  - /portfolio/
 ---
 
 {% include base_path %}
 
+<p>My lab, the Semantic Computing Research Lab (COUL) at NC State, works on models, query languages, and systems for managing and processing semantically rich data at scale. Below are our main research projects, newest first. For papers, see the <a href="{{ base_path }}/publications/">Publications</a> page.</p>
 
-{% for post in site.portfolio %}
+{% assign projects = site.portfolio | sort: "order" %}
+{% for post in projects %}
   {% include archive-single.html %}
 {% endfor %}
-
