@@ -2,18 +2,26 @@
 permalink: /
 title: "Kemafor Anyanwu Ogan"
 author_profile: true
+hide_title: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-<p class="eyebrow">Department of Computer Science &middot; NC State University</p>
-
-<p class="display">Structure that machines are accountable to.</p>
+<div class="hero">
+  {% include hero-graph.svg %}
+  <div class="hero__text">
+    <p class="eyebrow"><a href="https://csc.ncsu.edu/">Department of Computer Science &middot; NC State University</a></p>
+    <h1 class="hero__title">Structure that machines are accountable to.</h1>
+    <p class="hero__lab">Semantic Computing Research Lab (COUL)</p>
+  </div>
+</div>
 
 <p class="lede">We study how explicit domain knowledge should shape <em>what a model learns</em>, <em>what it infers</em>, and <em>what it is permitted to believe</em>.</p>
 
-I am an Associate Professor in the [Department of Computer Science](https://csc.ncsu.edu/) at [North Carolina State University](https://www.ncsu.edu/), where I direct the **Semantic Computing Research Lab (COUL)**. Ontologies, taxonomies, and declarative constraints already encode a great deal of what a domain knows. Our work treats that knowledge as a working part of a machine learning system rather than as documentation beside it, across learning, inference, and the management of knowledge that persists. My work spans knowledge graphs, ontological data management, and neurosymbolic AI.
+I am an Associate Professor in the [Department of Computer Science](https://csc.ncsu.edu/) at [North Carolina State University](https://www.ncsu.edu/), where I direct the **Semantic Computing Research Lab (COUL)**.
+
+Ontologies, taxonomies, and declarative constraints already encode a great deal of what a domain knows. Our work treats that knowledge as a working part of a machine learning system rather than as documentation beside it, across learning, inference, and the management of knowledge that persists. My work spans knowledge graphs, ontological data management, and neurosymbolic AI.
 
 <div class="sec-head"><span class="sec-num">NOW</span><h2>Current research</h2></div>
 <p class="sec-sub">Where symbolic structure enters the pipeline</p>

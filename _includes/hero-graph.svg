@@ -1,0 +1,106 @@
+<svg class="hero-graph" viewBox="0 0 1200 420" preserveAspectRatio="xMaxYMid slice" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<defs><pattern id="hg-dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" class="hg-dot"/></pattern></defs>
+<rect width="1200" height="420" fill="url(#hg-dots)"/>
+<g class="hg-formulas">
+<text class="hg-f hg-f--serif" x="985" y="58" font-size="26">a ∧ b  ↦  a · b</text>
+<text class="hg-f hg-f--mono" x="1075" y="128" font-size="14">¬a ↦ 1 − a</text>
+<text class="hg-f hg-f--serif" x="900" y="168" font-size="16">∀x Cat(x) → Animal(x)</text>
+<text class="hg-f hg-f--accent" x="1080" y="232" font-size="18">C ⊑ ∃r.D</text>
+<text class="hg-f hg-f--mono" x="825" y="262" font-size="12">a → b ↦ min(1, 1−a+b)</text>
+<text class="hg-f hg-f--accent" x="950" y="330" font-size="19">ℒ + λ(1 − sat(φ))</text>
+<text class="hg-f hg-f--mono" x="820" y="395" font-size="12">max(0, a+b−1)</text>
+<text class="hg-f hg-f--serif" x="1000" y="400" font-size="24">∂ sat(φ) / ∂θ</text>
+</g><g class="hg-edges">
+<line x1="900" y1="84" x2="860" y2="166"/>
+<line x1="900" y1="84" x2="818" y2="37"/>
+<line x1="900" y1="84" x2="974" y2="38"/>
+<line x1="860" y1="166" x2="793" y2="248"/>
+<line x1="860" y1="166" x2="776" y2="165"/>
+<line x1="415" y1="27" x2="533" y2="154"/>
+<line x1="415" y1="27" x2="436" y2="123"/>
+<line x1="415" y1="27" x2="546" y2="29"/>
+<line x1="1051" y1="83" x2="983" y2="130"/>
+<line x1="677" y1="247" x2="793" y2="248"/>
+<line x1="677" y1="247" x2="618" y2="190"/>
+<line x1="677" y1="247" x2="614" y2="301"/>
+<line x1="709" y1="116" x2="604" y2="94"/>
+<line x1="709" y1="116" x2="818" y2="37"/>
+<line x1="709" y1="116" x2="776" y2="165"/>
+<line x1="709" y1="116" x2="659" y2="33"/>
+<line x1="793" y1="248" x2="788" y2="354"/>
+<line x1="793" y1="248" x2="776" y2="165"/>
+<line x1="382" y1="223" x2="436" y2="123"/>
+<line x1="382" y1="223" x2="520" y2="257"/>
+<line x1="382" y1="223" x2="413" y2="304"/>
+<line x1="951" y1="354" x2="1076" y2="347"/>
+<line x1="951" y1="354" x2="878" y2="283"/>
+<line x1="533" y1="154" x2="604" y2="94"/>
+<line x1="533" y1="154" x2="436" y2="123"/>
+<line x1="533" y1="154" x2="520" y2="257"/>
+<line x1="533" y1="154" x2="546" y2="29"/>
+<line x1="533" y1="154" x2="618" y2="190"/>
+<line x1="1175" y1="353" x2="1076" y2="347"/>
+<line x1="604" y1="94" x2="546" y2="29"/>
+<line x1="604" y1="94" x2="618" y2="190"/>
+<line x1="604" y1="94" x2="659" y2="33"/>
+<line x1="788" y1="354" x2="663" y2="383"/>
+<line x1="788" y1="354" x2="878" y2="283"/>
+<line x1="455" y1="380" x2="520" y2="257"/>
+<line x1="455" y1="380" x2="543" y2="381"/>
+<line x1="455" y1="380" x2="413" y2="304"/>
+<line x1="663" y1="383" x2="614" y2="301"/>
+<line x1="663" y1="383" x2="543" y2="381"/>
+<line x1="818" y1="37" x2="776" y2="165"/>
+<line x1="520" y1="257" x2="614" y2="301"/>
+<line x1="520" y1="257" x2="413" y2="304"/>
+<line x1="546" y1="29" x2="659" y2="33"/>
+<line x1="614" y1="301" x2="543" y2="381"/>
+<line x1="974" y1="38" x2="983" y2="130"/>
+</g><g class="hg-path">
+<line x1="860" y1="166" x2="933" y2="212"/>
+<line x1="933" y1="212" x2="1030" y2="268"/>
+<line x1="1030" y1="268" x2="1047" y2="184"/>
+<line x1="1047" y1="184" x2="1128" y2="137"/>
+<line x1="1128" y1="137" x2="1165" y2="223"/>
+<line x1="1165" y1="223" x2="1175" y2="353"/>
+</g><g class="hg-labels">
+<text x="888" y="210" text-anchor="middle">rdf:type</text>
+<text x="1024" y="223" text-anchor="middle">subClassOf</text>
+<text x="1160" y="174" text-anchor="middle">partOf</text>
+</g><g class="hg-nodes">
+<circle cx="900" cy="84" r="4"/>
+<circle cx="415" cy="27" r="4"/>
+<circle cx="1051" cy="83" r="4"/>
+<circle cx="677" cy="247" r="4"/>
+<circle cx="709" cy="116" r="4"/>
+<circle cx="793" cy="248" r="4"/>
+<circle cx="382" cy="223" r="6"/>
+<circle cx="951" cy="354" r="4"/>
+<circle cx="533" cy="154" r="6"/>
+<circle cx="1076" cy="347" r="6"/>
+<circle cx="604" cy="94" r="6"/>
+<circle cx="788" cy="354" r="6"/>
+<circle cx="455" cy="380" r="6"/>
+<circle cx="663" cy="383" r="4"/>
+<circle cx="818" cy="37" r="4"/>
+<circle cx="436" cy="123" r="6"/>
+<circle cx="520" cy="257" r="4"/>
+<circle cx="546" cy="29" r="4"/>
+<circle cx="618" cy="190" r="4"/>
+<circle cx="614" cy="301" r="6"/>
+<circle cx="543" cy="381" r="6"/>
+<circle cx="776" cy="165" r="6"/>
+<circle cx="878" cy="283" r="4"/>
+<circle cx="974" cy="38" r="4"/>
+<circle cx="659" cy="33" r="4"/>
+<circle cx="413" cy="304" r="4"/>
+<circle cx="983" cy="130" r="4"/>
+</g><g class="hg-hot">
+<circle class="hg-ring" cx="860" cy="166" r="11"/><circle cx="860" cy="166" r="5.5"/>
+<circle class="hg-ring" cx="933" cy="212" r="11"/><circle cx="933" cy="212" r="5.5"/>
+<circle class="hg-ring" cx="1030" cy="268" r="11"/><circle cx="1030" cy="268" r="5.5"/>
+<circle class="hg-ring" cx="1047" cy="184" r="11"/><circle cx="1047" cy="184" r="5.5"/>
+<circle class="hg-ring" cx="1128" cy="137" r="11"/><circle cx="1128" cy="137" r="5.5"/>
+<circle class="hg-ring" cx="1165" cy="223" r="11"/><circle cx="1165" cy="223" r="5.5"/>
+<circle class="hg-ring" cx="1175" cy="353" r="11"/><circle cx="1175" cy="353" r="5.5"/>
+</g></svg>

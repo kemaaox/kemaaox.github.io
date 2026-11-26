@@ -82,6 +82,7 @@ h1, h2, h3, .page__title {
   }
   h3 { font-size: 1.15rem; }
   p, li { max-width: 44rem; }
+  p { margin-bottom: 1.25em; }
 }
 
 /* Section rule above top-level content headings */
@@ -187,7 +188,7 @@ h1, h2, h3, .page__title {
   font-size: clamp(1.1rem, 2.3vw, 1.3rem);
   line-height: 1.5;
   max-width: 42rem;
-  margin: 0 0 1.1rem;
+  margin: 0 0 2.2rem;
   em { color: var(--global-link-color); font-style: italic; }
 }
 
@@ -324,6 +325,107 @@ h1, h2, h3, .page__title {
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
+}
+
+/* ---------- home page hero banner ---------- */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--global-surface-color);
+  border: 1px solid var(--global-border-color);
+  min-height: 19rem;
+  margin: 0 0 3rem;
+  display: flex;
+  align-items: flex-end;
+
+  .hero-graph {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* fade the graph behind the text so the headline stays legible */
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+      var(--global-surface-color) 0%,
+      var(--global-surface-color) 40%,
+      transparent 85%);
+    pointer-events: none;
+  }
+}
+
+.hero__text {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 2.75rem 2.6rem;
+  max-width: 36rem;
+
+  .eyebrow { margin-bottom: 1.6rem; line-height: 1.7; }
+  .eyebrow a {
+    color: var(--global-link-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    &:hover, &:focus-visible { border-bottom-color: var(--global-link-color); }
+  }
+}
+
+.page__content .hero__title, .hero__title {
+  font-family: $serif;
+  font-weight: 600;
+  font-size: clamp(1.9rem, 4.6vw, 2.8rem);
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+  max-width: 16ch;
+  margin: 0 0 1.6rem;
+  padding: 0;
+  border: 0;
+}
+
+.page__content p.hero__lab, .hero__lab {
+  font-family: $monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  margin: 0;
+}
+
+.hero-graph {
+  .hg-dot   { fill: var(--global-border-color); }
+  .hg-edges line { stroke: var(--global-dark-border-color); stroke-width: 1.2; }
+  .hg-nodes circle { fill: var(--global-bg-color); stroke: var(--global-text-color-light); stroke-width: 1.4; }
+  .hg-path line { stroke: var(--global-link-color); stroke-width: 2.2; }
+  .hg-hot circle { fill: var(--global-link-color); }
+  .hg-hot .hg-ring { fill: var(--global-accent-wash); stroke: var(--global-link-color); stroke-width: 1; opacity: 0.9; }
+  .hg-f { letter-spacing: 0.01em; }
+  .hg-f--serif  { font-family: $serif; font-style: italic; fill: var(--global-text-color-light); opacity: 0.55; }
+  .hg-f--mono   { font-family: $monospace; fill: var(--global-text-color-light); opacity: 0.5; }
+  .hg-f--accent { font-family: $serif; font-style: italic; fill: var(--global-link-color); opacity: 0.6; }
+  .hg-labels text {
+    font-family: $monospace;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    fill: var(--global-link-color);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero { min-height: 15rem; }
+  .hero::after {
+    background: linear-gradient(0deg,
+      var(--global-surface-color) 0%,
+      var(--global-surface-color) 45%,
+      transparent 100%);
+  }
+  .hero__text { padding: 2rem 1.4rem 1.6rem; }
+  .hero__text .eyebrow { margin-bottom: 1.1rem; }
+  .page__content .hero__title, .hero__title { margin-bottom: 1.1rem; }
 }
 
 /* ==========================================================================
