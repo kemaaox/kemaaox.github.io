@@ -2,7 +2,8 @@
 title: "SmartChainDB: Semantically Enhanced Blockchains for Smart Marketplaces"
 excerpt: "A scalable, semantically enhanced blockchain platform for decentralized digital marketplaces, with declarative and typed transactions, smart assets, and buyer privacy. NSF CNS-1764025 (2018–2024)."
 collection: portfolio
-order: 1
+group: earlier
+order: 11
 ---
 
 Blockchains promise to mediate transactions between parties that do not trust each other without a central authority. Today, however, most non-trivial blockchain transactions are written as user-programmed smart contracts, which are hard to get right, hard to optimize, and opaque to the platform executing them.

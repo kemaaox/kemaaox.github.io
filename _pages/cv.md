@@ -31,17 +31,19 @@ Academic and professional experience
 
 Research interests
 ======
+* Neurosymbolic AI: ontology-guided learning, constrained neurosymbolic inference, governed memory and state integrity
 * Semantic Web and knowledge graph data management
 * Big data management and analytics; scalable query processing and optimization
 * Blockchain data management and decentralized marketplaces
 * Semantics for networked systems and the Internet of Things
-* Knowledge graphs and neurosymbolic AI
 
 Honors and awards
 ======
+* **Best Paper Award**, IEEE BigData 2017
+* **Best Paper Award Nominee**, IEEE NetSoft 2018
 * IBM Faculty Award, 2016
-* Best Student Paper Award Nominee, International Semantic Web Conference (ISWC), 2014
-* Best Paper Award, Joint International Semantic Technology Conference (JIST), 2012, for *SkyPackage: From Finding Items to Finding a Skyline of Packages on the Semantic Web* (with Matthew Sessoms)
+* **Best Paper Award Nominee** (student paper category), International Semantic Web Conference (ISWC), 2014
+* **Best Paper Award**, Joint International Semantic Technology Conference (JIST), 2012, for *SkyPackage: From Finding Items to Finding a Skyline of Packages on the Semantic Web* (with Matthew Sessoms)
 * NC State Faculty Research and Professional Development (FRPD) Award, 2011
 * IBM Faculty Award, 2009
 * IBM Faculty Award, 2008
@@ -66,41 +68,52 @@ Research funding
 Professional service
 ======
 **Conference and workshop leadership**
-* Program Chair and Local Chair, 3rd U.S. Semantic Technologies Symposium (US2TS 2020), Raleigh, NC, 2020
-* Scholarships Vice Chair, Tapia Celebration of Diversity in Computing Conference, 2017
-* Workshops Co-Chair, IEEE International Conference on Big Data (IEEE BigData 2015)
-* Steering Committee Member, NSF Workshop Series on Big Data and the Internet of Things, 2015
-* Workshop and PC Co-Chair, 1st IEEE International Workshop on Semantics for Big Data on the Internet of Things (SemBIoT 2014), co-located with IEEE BigData 2014
-* PC Vice Chair, IEEE/WIC/ACM International Conference on Web Intelligence (WI 2013)
-* PC Co-Chair, International Workshop on Enterprise Integration, Interoperability and Networking (EI2N 2010) and SeDeS 2010, OTM 2010 Workshops
-* Steering Committee Member, International World Wide Web Conference (WWW 2010)
+* Program Co-Chair: SKM 2023; US2TS 2020 (U.S. Semantic Technologies Symposium); ACM/IEEE Web Intelligence (WI) 2013; SemBIoT 2014 (IEEE Workshop on Semantics for Big Data on the Internet of Things)
+* Local Organizer, US2TS 2020, Raleigh, NC
+* Steering Committee Member: US2TS 2021, 2022; NCDS/NSF Workshop on Data Science for IoT, 2015; ACM WWW 2010
+* Conference Workshops Co-Chair, IEEE BigData 2015
+* Scholarships Co-Chair, Tapia Celebration of Diversity in Computing, 2017, 2018
+* PC Co-Chair, EI2N 2010 and SeDeS 2010, OTM 2010 Workshops
 
 **Editorial**
-* Guest Editor (with Ying Ding, Jie Tang, and Philip Yu), *International Journal on Semantic Web and Information Systems* (IJSWIS), Special Issue on Mining Associations and Patterns from the Semantic Data Web, 2012–2013
-* Reviewer for *IEEE Transactions on Knowledge and Data Engineering*, *Journal of Web Semantics*, and *IEEE Internet Computing*
+* Member, Journal Editorial Board, *International Journal on Semantic Web and Information Systems* (IJSWIS), 2014
+* Guest Editor (with Ying Ding, Jie Tang, and Philip Yu), IJSWIS Special Issue on Mining Associations and Patterns from the Semantic Data Web, 2012–2013
+* Journal reviewer: *IEEE Transactions on Knowledge and Data Engineering* (2013, 2017); *Journal of Web Semantics* (2016); *IEEE Internet Computing* (2016, 2021); *IEEE Computer* (2015); *IEEE Transactions on Cloud Computing* (2014); *ETRI Journal* (2012)
 
 **Program committees**
-* International Semantic Web Conference (ISWC): 2008–2015, 2017; Industry Track 2023
-* The Web Conference / International World Wide Web Conference (WWW): 2013–2017
-* Extended Semantic Web Conference (ESWC): 2014, 2015, 2025
-* ACM International Conference on Information and Knowledge Management (CIKM): Applied Research Track 2022
-* IEEE International Conference on Data Engineering (ICDE): Demo Track 2009
+* The Web Conference / International World Wide Web Conference (WWW): 2013–2026
+* ACM International Conference on Information and Knowledge Management (CIKM): 2020–2026
+* International Semantic Web Conference (ISWC): 2008–2015, 2017, 2024, 2025; Industry Track 2023
+* Extended Semantic Web Conference (ESWC): 2013, 2014, 2025
+* IEEE International Conference on Web Services (ICWS): 2012
+* IEEE International Conference on Data Engineering (ICDE), Demo Track: 2009
 * IEEE/WIC/ACM International Conference on Web Intelligence (WI): 2014
-* IEEE International Conference on Web Services (ICWS): Work-in-Progress Track 2012
 * External reviewer: SIGMOD 2015, VLDB 2008
 
 **National Science Foundation**
-* Proposal review panelist: 2008, 2011, 2013, 2014, 2015, 2016
+* Proposal review panelist: 2008, 2011, 2013 (2 panels), 2014, 2015, 2016, 2018 (3 panels), 2020, 2021
+
+**Service at NC State**
+* *University:* Regional Engagement Team for Sub-Saharan Africa, 2017, 2018
+* *College of Engineering:* Research Committee, 2016–present; COE/ISE Graduate Recruiting Event, 2018–2021; CSC Department Head Search Committee, 2017; Scholarships Committee, 2007
+* *Department of Computer Science:* Faculty Mentor, CODEBLACK, 2022–present; PhD Seminar Panel, 2020, 2021; Diversity Committee, 2018–2019; BFF Program Mentor, 2018; Summer REU Mentor, 2018; Graduate Recruiting Event, 2013, 2015; Graduate Admissions Committee, 2012; Judge, WiCS Research Competition, 2011–2013
 
 Outreach and engagement
 ======
 * NC State Program Leader, IBM Africa Skills Program, 2016–
-* Panelist, *Coded Bias* discussion, PBS North Carolina, 2021
+* TV show panelist, PBS North Carolina, Indie Lens documentary series (*Coded Bias*), 2021
 * Panelist, *Internet of Things for Development*, Digital Africa Conference, Abuja, Nigeria, 2016
+
+Current research group
+======
+* Olatayo (Tayo) Olukotun (Ph.D. student): representation learning, agent memory
+* Habib Mohammed (Ph.D. student): path recommendation
+* Mulikatu Yakubu (Ph.D. student): constrained inference, knowledge graphs
+* Vedantt Koul (Researcher): knowledge graphs for nutrition
 
 Students advised
 ======
-See the [Students]({{ base_path }}/students/) page.
+See the [People]({{ base_path }}/people/) page.
 
 Teaching
 ======

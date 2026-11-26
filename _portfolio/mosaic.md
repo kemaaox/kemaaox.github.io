@@ -2,7 +2,8 @@
 title: "MOSAIC: Advanced Querying Paradigms for Discovery on the Semantic Web"
 excerpt: "Query models that go beyond lookup: keyword, structure-discovery, exploratory, and package/skyline queries over RDF data. NSF IIS-0915865 (2009–2014)."
 collection: portfolio
-order: 4
+group: earlier
+order: 14
 ---
 
 Traditional query languages assume users know exactly what they are looking for and how the data is structured. Many tasks on the Semantic Web, the "structured web", are instead *discovery-oriented*: users want to explore, find unexpected connections, or assemble combinations of items that together satisfy their needs.

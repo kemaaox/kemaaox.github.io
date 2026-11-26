@@ -33,22 +33,25 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Dark theme for the site */
+/* Dark theme: editorial palette (Semantic Computing Lab) */
 html[data-theme="dark"] {
-    --global-base-color                 : #{$background};
-    --global-bg-color                   : #{$background};
-    --global-footer-bg-color            : #{$background};
-    --global-border-color               : #{$light-gray};
-    --global-dark-border-color          : #{$background-light};
-    --global-code-background-color      : #fafafa;
-    --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : #{$light-gray};
-    --global-link-color                 : #{$link};
-    --global-link-color-hover           : #{$link-dark};
-    --global-link-color-visited         : #{$link-light};
-    --global-masthead-link-color        : #{$text};
-    --global-masthead-link-color-hover  : #{$background-light};
-    --global-text-color                 : #{$text};
-    --global-text-color-light           : #f3f3f3;
-    --global-thead-color                : #{$background-lighter};
+    --global-base-color                 : #98A0AB;
+    --global-bg-color                   : #0F1216;
+    --global-footer-bg-color            : #0F1216;
+    --global-border-color               : #262C34;
+    --global-dark-border-color          : #3A424D;
+    --global-code-background-color      : #171B21;
+    --global-code-text-color            : #E7EAEE;
+    --global-fig-caption-color          : #98A0AB;
+    --global-link-color                 : #E4788A;
+    --global-link-color-hover           : #F0A0AD;
+    --global-link-color-visited         : #E4788A;
+    --global-masthead-link-color        : #98A0AB;
+    --global-masthead-link-color-hover  : #E4788A;
+    --global-text-color                 : #E7EAEE;
+    --global-text-color-light           : #98A0AB;
+    --global-thead-color                : #171B21;
+    --global-surface-color              : #171B21;
+    --global-accent-wash                : #241A1D;
+    color-scheme                        : dark;
 }

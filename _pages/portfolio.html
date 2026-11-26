@@ -9,9 +9,34 @@ redirect_from:
 
 {% include base_path %}
 
-<p>My lab, the Semantic Computing Research Lab (COUL) at NC State, works on models, query languages, and systems for managing and processing semantically rich data at scale. Below are our main research projects, newest first. For papers, see the <a href="{{ base_path }}/publications/">Publications</a> page.</p>
+<p class="lede">We study how explicit domain knowledge should shape <em>what a model learns</em>, <em>what it infers</em>, and <em>what it is permitted to believe</em>.</p>
 
-{% assign projects = site.portfolio | sort: "order" %}
-{% for post in projects %}
+<p>Ontologies, taxonomies, and declarative constraints already encode a great deal of what a domain knows. Our work in the Semantic Computing Research Lab (COUL) treats that knowledge as a working part of a machine learning system rather than as documentation beside it. The current research areas below are ordered by where symbolic structure enters the pipeline: in learning, at inference, and in the management of knowledge that persists. They build on two decades of work on Semantic Web data management, scalable query processing, and blockchain data management, listed under <a href="#earlier">Earlier projects</a>. For papers, see the <a href="{{ base_path }}/publications/">Publications</a> page.</p>
+
+{% assign current = site.portfolio | where: "group", "current" | sort: "order" %}
+{% for post in current %}
+<div class="sec-head"><span class="sec-num">{{ post.number }}</span><h2><a href="{{ base_path }}{{ post.url }}" style="text-decoration:none;color:inherit">{{ post.title }}</a></h2></div>
+<p class="sec-sub">{{ post.subtitle }}</p>
+{{ post.excerpt | markdownify }}
+<p><a href="{{ base_path }}{{ post.url }}">Read more about this area &rarr;</a></p>
+{% endfor %}
+
+<div class="sec-head" id="domains"><span class="sec-num">04</span><h2>Application domains</h2></div>
+<p class="sec-sub">Where the methods are grounded and tested</p>
+<p>We look for settings where domain structure is already written down by people who are not computer scientists, and where getting it wrong has a cost that can be measured.</p>
+<div class="domains">
+  <div class="domain"><h4>Workforce and careers</h4><p>Occupational taxonomies, skill ontologies, and career trajectories.</p></div>
+  <div class="domain"><h4>Clinical nutrition</h4><p>Disease staging and dietary requirements, where limits are regulated and hard.</p></div>
+  <div class="domain"><h4>Environmental monitoring</h4><p>Forest health and pest progression, where early detection is the point.</p></div>
+  <div class="domain"><h4>Autonomous systems</h4><p>Knowledge that software agents and robots retain and act upon.</p></div>
+  <div class="domain"><h4>Decentralized systems</h4><p>Validation over evolving graph-structured state.</p></div>
+  <div class="domain"><h4>Process operations</h4><p>Instrumented settings where machine-held beliefs can be checked against measurement.</p></div>
+</div>
+
+<div class="sec-head" id="earlier"><span class="sec-num">05</span><h2>Earlier projects</h2></div>
+<p class="sec-sub">Semantic Web, big data, networks, and blockchains, 2001&ndash;2024</p>
+
+{% assign earlier = site.portfolio | where: "group", "earlier" | sort: "order" %}
+{% for post in earlier %}
   {% include archive-single.html %}
 {% endfor %}

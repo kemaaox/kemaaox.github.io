@@ -1,0 +1,370 @@
+/* ==========================================================================
+   EDITORIAL STYLE
+   Spectral display type, Inter body, IBM Plex Mono labels, oxblood accent.
+   Overrides the Academic Pages defaults and adds components used in page
+   content (eyebrow, lede, numbered section heads, threads, domains, people,
+   course badges, notes).
+   ========================================================================== */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.65;
+}
+
+a { color: var(--global-link-color); }
+:focus-visible { outline: 2px solid var(--global-link-color); outline-offset: 3px; }
+
+/* ---------- masthead / navigation ---------- */
+
+.masthead__inner-wrap { padding-top: 0.55em; padding-bottom: 0.55em; }
+
+.masthead__menu-item a {
+  font-family: $monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--global-masthead-link-color);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+
+  &:hover, &:focus-visible {
+    color: var(--global-link-color);
+    border-bottom-color: var(--global-link-color);
+  }
+}
+
+.masthead__menu-item--lg a {
+  font-family: $serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  color: var(--global-text-color);
+  &:hover { border-bottom-color: transparent; }
+}
+
+#theme-toggle a { border-bottom: 0; }
+
+.greedy-nav .visible-links a::before { display: none; }   // drop default hover underline bar
+.greedy-nav button { background-color: var(--global-surface-color); }
+.greedy-nav .navicon,
+.greedy-nav .navicon::before,
+.greedy-nav .navicon::after { background: var(--global-text-color); }
+.greedy-nav .hidden-links { background: var(--global-bg-color); border-color: var(--global-border-color); }
+
+/* ---------- headings and page titles ---------- */
+
+h1, h2, h3, .page__title {
+  font-family: $serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.page__title {
+  font-size: clamp(2rem, 4.5vw, 2.6rem);
+  line-height: 1.1;
+  margin-bottom: 0.6em;
+}
+
+.page__content {
+  h1, h2 {
+    font-size: clamp(1.45rem, 3vw, 1.8rem);
+    line-height: 1.2;
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 2.6rem;
+  }
+  h3 { font-size: 1.15rem; }
+  p, li { max-width: 44rem; }
+}
+
+/* Section rule above top-level content headings */
+.page__content > h1,
+.page__content > h2 {
+  border-top: 1px solid var(--global-border-color);
+  padding-top: 2rem;
+}
+
+/* ---------- archive lists (publications, talks, teaching, research) ---------- */
+
+.archive h2 {              // year / category headings on list pages
+  font-family: $serif;
+  font-weight: 600;
+  margin-top: 2.2rem;
+}
+.archive hr { border: 0; border-top: 1px solid var(--global-border-color); }
+
+.archive__item-title {
+  font-family: $serif;
+  font-weight: 600;
+  font-size: 1.18rem;
+  line-height: 1.3;
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+}
+
+.archive__item {
+  border-left: 2px solid var(--global-border-color);
+  padding-left: 1.15rem;
+  margin-bottom: 1.6rem;
+  transition: border-color 0.15s;
+  &:hover { border-left-color: var(--global-link-color); }
+
+  p { font-size: 0.95rem; }
+}
+
+.page__meta, .page__date {
+  font-family: $monospace;
+  font-size: 0.73rem;
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light);
+}
+
+/* ---------- sidebar ---------- */
+
+.author__avatar img { border: 1px solid var(--global-border-color); padding: 3px; }
+.author__name { font-family: $serif; font-weight: 600; font-size: 1.15rem; }
+.author__bio  { color: var(--global-text-color-light); }
+.author__urls .fa-github, .author__urls .fa-square-github { color: var(--global-text-color) !important; }
+.author__urls { font-family: $sans-serif; }
+.author__urls-wrapper .btn--inverse {
+  font-family: $monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ---------- footer ---------- */
+
+.page__footer {
+  border-top: 1px solid var(--global-border-color);
+  footer { font-family: $monospace; }
+}
+.page__footer-copyright { font-family: $monospace; font-size: 0.73rem; color: var(--global-text-color-light); }
+
+/* ---------- buttons ---------- */
+
+.btn {
+  border-radius: 0;
+  font-family: $monospace;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  background-color: var(--global-link-color);
+}
+
+/* ==========================================================================
+   CONTENT COMPONENTS (used directly in page markdown/HTML)
+   ========================================================================== */
+
+.eyebrow {
+  font-family: $monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--global-link-color);
+  margin: 0 0 1rem;
+}
+
+.display, .page__content p.display {
+  font-family: $serif;
+  font-weight: 600;
+  font-size: clamp(1.9rem, 5vw, 2.8rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+  max-width: 18ch;
+  margin: 0 0 1.2rem;
+}
+
+.lede, .page__content p.lede {
+  font-family: $serif;
+  font-size: clamp(1.1rem, 2.3vw, 1.3rem);
+  line-height: 1.5;
+  max-width: 42rem;
+  margin: 0 0 1.1rem;
+  em { color: var(--global-link-color); font-style: italic; }
+}
+
+.byline {
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+  margin-top: 1.6rem;
+  strong { color: var(--global-text-color); font-weight: 600; }
+}
+
+/* Numbered section heading: <div class="sec-head"><span class="sec-num">01</span><h2>…</h2></div> */
+.sec-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  margin: 0 0 0.4rem;
+  border-top: 1px solid var(--global-border-color);
+  padding-top: 2rem;
+  margin-top: 2.6rem;
+
+  h2, h3 { margin: 0 !important; border: 0 !important; padding: 0 !important; }
+}
+.sec-num {
+  font-family: $monospace;
+  font-size: 0.74rem;
+  color: var(--global-link-color);
+  letter-spacing: 0.08em;
+  flex: none;
+}
+.sec-sub {
+  font-family: $monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  margin: 0 0 1.4rem;
+}
+
+/* Threads: left-ruled items */
+.threads { margin: 1.6rem 0; display: grid; gap: 1.3rem; }
+.thread {
+  border-left: 2px solid var(--global-border-color);
+  padding-left: 1.15rem;
+  min-width: 0;
+  transition: border-color 0.15s;
+  &:hover { border-left-color: var(--global-link-color); }
+  h3, h4 {
+    font-family: $sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.005em;
+    margin: 0 0 0.3rem;
+    border: 0;
+    padding: 0;
+  }
+  p { margin: 0; font-size: 0.95rem; }
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+}
+.meta {
+  font-family: $monospace;
+  font-size: 0.73rem;
+  color: var(--global-text-color-light);
+  letter-spacing: 0.02em;
+  margin-top: 0.45rem !important;
+}
+
+/* Domains grid */
+.domains {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1.3rem 1.8rem;
+  margin: 1.6rem 0;
+}
+.domain {
+  min-width: 0;
+  h4 {
+    font-family: $monospace;
+    font-size: 0.73rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--global-link-color);
+    font-weight: 500;
+    margin: 0 0 0.35rem;
+  }
+  p { font-size: 0.92rem; margin: 0; color: var(--global-text-color-light); }
+}
+
+/* People grid */
+.people {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1.2rem 1.8rem;
+  margin: 1.4rem 0 2rem;
+}
+.person { min-width: 0; }
+.person .nm { font-weight: 600; font-size: 0.97rem; }
+.person .rl {
+  font-family: $monospace;
+  font-size: 0.73rem;
+  color: var(--global-text-color-light);
+  margin-top: 0.2rem;
+}
+
+/* Courses */
+.courses { margin: 1.4rem 0 2rem; display: grid; gap: 1.2rem; }
+.course .cn { font-weight: 600; font-size: 0.98rem; }
+.course p { font-size: 0.93rem; color: var(--global-text-color-light); margin: 0.25rem 0 0; }
+
+.badge {
+  display: inline-block;
+  font-family: $monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--global-link-color);
+  background: var(--global-accent-wash);
+  padding: 0.12rem 0.42rem;
+  margin-left: 0.45rem;
+  vertical-align: 0.1em;
+  font-weight: 500;
+}
+
+/* Note box */
+.note {
+  background: var(--global-surface-color);
+  border: 1px solid var(--global-border-color);
+  padding: 1.2rem 1.3rem;
+  max-width: 44rem;
+  margin: 1.4rem 0;
+  p { margin: 0; font-size: 0.95rem; }
+  p + p { margin-top: 0.7rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+/* ==========================================================================
+   RESPONSIVENESS
+   ========================================================================== */
+
+/* The theme pins the sidebar (position: fixed; height: 100vh; overflow-y: auto)
+   from 1024px up. On short laptop screens the sidebar is taller than the
+   viewport, which produced a second scrollbar overlapping the content.
+   When the viewport is short, let the sidebar flow with the page instead. */
+@media screen and (min-width: 1024px) and (max-height: 900px) {
+  .sidebar {
+    position: relative;
+    height: auto;
+    overflow: visible;
+    padding-top: 0;
+  }
+}
+
+/* When the sidebar is pinned (tall screens), keep any overflow scroll quiet. */
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    scrollbar-width: none;
+    overscroll-behavior: contain;
+    &::-webkit-scrollbar { display: none; }
+  }
+}
+
+/* Long sidebar labels wrap instead of being clipped. */
+.author__urls li {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* Small screens: tighten type and spacing. */
+@media screen and (max-width: 600px) {
+  #main { padding-left: 1rem; padding-right: 1rem; }
+  .page__title { font-size: 1.9rem; }
+  .sec-head { margin-top: 2rem; padding-top: 1.5rem; }
+  .domains, .people { grid-template-columns: 1fr 1fr; gap: 1rem 1.2rem; }
+  .archive__item { padding-left: 0.9rem; }
+}
+@media screen and (max-width: 380px) {
+  .domains, .people { grid-template-columns: 1fr; }
+}
+
+/* Never allow horizontal scrolling from long words, URLs, or citations. */
+.page__content, .archive { overflow-wrap: break-word; }
+html, body { overflow-x: hidden; }

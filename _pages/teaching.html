@@ -7,6 +7,26 @@ author_profile: true
 
 {% include base_path %}
 
+<p class="sec-sub">Graduate curriculum in neurosymbolic AI and data management</p>
+
+<div class="courses">
+  <div class="course">
+    <div class="cn">CSC 532: Foundations of Neurosymbolic Artificial Intelligence <span class="badge">New</span></div>
+    <p>Differentiable formulations of symbolic knowledge, knowledge graph and ontology embeddings, knowledge-grounded retrieval, and the integration patterns that define the field.</p>
+  </div>
+  <div class="course">
+    <div class="cn"><a href="{{ base_path }}/teaching/csc-791-knowledge-graphs-neurosymbolic-ai">CSC 591/791: Advanced Topics in Neurosymbolic Artificial Intelligence</a> <span class="badge">New</span></div>
+    <p>A rotating research seminar covering current primary literature in the field.</p>
+  </div>
+  <div class="course">
+    <div class="cn"><a href="{{ base_path }}/teaching/csc-540-database-management">CSC 540: Graduate Database Systems</a></div>
+    <p>Core graduate data management, spanning application design and systems-level implementation.</p>
+  </div>
+</div>
+
+<div class="sec-head"><h2>Courses taught at NC State</h2></div>
+<p class="sec-sub">Course history, most recent first</p>
+
 {% for post in site.teaching reversed %}
   {% include archive-single.html %}
 {% endfor %}

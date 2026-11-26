@@ -1,7 +1,7 @@
 ---
 title: "Panel Discussion: Coded Bias"
 collection: talks
-type: "Panel"
+type: "Panel (TV)"
 talk_type: "Panel"
 permalink: /talks/2021-03-02-coded-bias-panel
 venue: "PBS North Carolina (Independent Lens preview)"

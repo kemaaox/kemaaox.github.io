@@ -2,7 +2,8 @@
 title: "Semantic Associations: Discovering and Ranking Complex Relationships"
 excerpt: "Foundational work (with the LSDIS Lab, University of Georgia) on querying, ranking, and extracting complex relationships between entities in RDF graphs: the ρ-operator, ρ-Queries, SemRank, and SPARQ2L."
 collection: portfolio
-order: 5
+group: earlier
+order: 15
 ---
 
 Many important questions, in national security, bioinformatics, and business intelligence, are not about individual entities but about *how* entities are connected. My doctoral work, in the Semantic Discovery (SemDis) project at the University of Georgia's LSDIS Lab under Prof. Amit Sheth, introduced **semantic associations**: complex relationships between entities in RDF graphs, such as paths or sets of paths, together with ways to query and rank them.

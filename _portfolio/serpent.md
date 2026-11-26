@@ -2,7 +2,8 @@
 title: "SERPENT: Semantically-Enabled Programmable Networked Systems"
 excerpt: "Semantic models of software-defined network state, so that path and topology problems can be solved inside a semantic database. Collaborative NSF NeTS project with RENCI (2015–2021)."
 collection: portfolio
-order: 2
+group: earlier
+order: 12
 ---
 
 Software-defined networking (SDN) makes networks programmable, but network control applications still have to solve hard problems, such as finding paths that satisfy complex constraints or embedding requested topologies, with hand-written code. **SERPENT** explored representing network resources and state with semantic (RDF/ontology) models, so that these problems can be expressed as declarative queries and answered with semantic query processing.

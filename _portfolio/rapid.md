@@ -2,7 +2,8 @@
 title: "RAPID and Scalable Semantic Web Data Processing in the Cloud"
 excerpt: "Query algebras, data models, and optimization techniques for processing large RDF graphs and knowledge graphs on MapReduce, Hadoop, and Spark. NSF IIS-1218277 (2012–2017)."
 collection: portfolio
-order: 3
+group: earlier
+order: 13
 ---
 
 As Semantic Web and knowledge graph datasets grew to billions of triples, processing them on cloud data-processing platforms such as MapReduce became attractive, but naive translations of SPARQL queries into MapReduce jobs are very expensive: many join cycles, large intermediate results, and repeated scans.
@@ -26,4 +27,5 @@ In the **RAPID / RAPID+** line of work we developed the **Nested TripleGroup Dat
 * SYRql: A Dataflow Language for Large Scale Processing of RDF Data. *ISWC 2014*.
 * Scaling Unbound-Property Queries on Big RDF Data Warehouses using MapReduce. *EDBT 2015*.
 * Optimization of Complex SPARQL Analytical Queries. *EDBT 2016*.
+* A Semantics-Aware Storage Framework for Scalable Processing of Knowledge Graphs on Hadoop. *IEEE BigData 2017* (Best Paper Award).
 * Type-based Semantic Optimization for Scalable RDF Graph Pattern Matching. *WWW 2017*.

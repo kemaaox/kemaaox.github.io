@@ -5,8 +5,11 @@ category: conferences
 permalink: /publication/2012-skypackage-from-finding-items-to-finding-a-skyline
 date: 2012-12-01
 venue: "Semantic Technology: Second Joint International Conference, JIST 2012, Lecture Notes in Computer Science"
+excerpt: "**Best Paper Award, JIST 2012.**"
 citation: "Matthew Sessoms, <b>Kemafor Anyanwu</b>. (2012). &quot;SkyPackage: From Finding Items to Finding a Skyline of Packages on the Semantic Web.&quot; <i>Semantic Technology: Second Joint International Conference, JIST 2012, Lecture Notes in Computer Science</i>, pp. 49-64."
 ---
+
+**Award:** Best Paper Award, JIST 2012
 
 **Authors:** Matthew Sessoms, Kemafor Anyanwu
 
