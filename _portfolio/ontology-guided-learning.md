@@ -23,7 +23,7 @@ Two questions motivate the work. What does structure contribute when labelled da
   <div class="thread">
     <h3>Does an ontology add signal beyond text embeddings?</h3>
     <p>A controlled study of inference-time ontology fusion for protein interaction and clinical trial ranking.</p>
-    <p class="meta">Olatayo Olukotun, Habib Mohammed, Mulikatu Yakubu &middot; <a href="/publication/2026-when-does-an-ontology-add-signal-beyond-text">KGBigData 2026 (IEEE), to appear</a></p>
+    <p class="meta">Olatayo Olukotun, Habib Mohammed, Mulikatu Yakubu &middot; <a href="/publication/2026-when-does-an-ontology-add-signal-beyond-text">KGBigData 2026 @ IEEE BigData 2026, to appear</a></p>
   </div>
   <div class="thread">
     <h3>Trajectory and path recommendation</h3>

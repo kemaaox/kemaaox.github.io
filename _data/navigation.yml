@@ -7,15 +7,19 @@
 main:
   - title: "Research"
     url: /research/
+    collection: portfolio
 
   - title: "Publications"
     url: /publications/
+    collection: publications
 
   - title: "Talks"
     url: /talks/
+    collection: talks
 
   - title: "Teaching"
     url: /teaching/
+    collection: teaching
 
   - title: "People"
     url: /people/
